@@ -36,7 +36,7 @@ function Hero() {
               src={ProfileImg}
               alt="Profile"
               style={{
-                width: "50%",
+                width: "80%",
                 height: "auto",
                 borderRadius: "50%",
                 margin: "auto",
@@ -47,7 +47,7 @@ function Hero() {
               display="flex"
               justifyContent="center"
               mt={2}
-              sx={{ color: "white" }}
+              sx={{ color: "white", mt: 5 }}
             >
               <IconButton href="https://www.facebook.com" target="_blank">
                 <FacebookIcon sx={{ color: "white" }} />
@@ -75,6 +75,7 @@ function Hero() {
           borderBottomWidth: 1, // thin border
           borderColor: "white", // white color
           margin: "20px auto", // centers the divider
+          mt: 12,
         }}
       />
     </Paper>

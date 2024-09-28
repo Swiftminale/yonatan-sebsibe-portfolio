@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <Paper sx={{ bgcolor: "transparent", color: "white", mt: 9 }}>
+    <Paper sx={{ bgcolor: "transparent", color: "white", mt: 5 }}>
       <Typography
         variant="h5"
         sx={{ fontWeight: 300, textAlign: "center", mt: 3 }}
