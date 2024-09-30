@@ -44,7 +44,14 @@ function Projects() {
       <Grid container spacing={2}>
         {/* Grid item for each Card */}
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
             <CardActionArea onClick={() => handleCardClick("/book-cover")}>
               <CardMedia
                 component="img"
@@ -53,10 +60,16 @@ function Projects() {
                 alt="book cover"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  ጻዴ
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
+                Book Cover
+                  {/* ጻዴ */}
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -67,8 +80,15 @@ function Projects() {
 
         {/* Repeat Grid item for each additional card */}
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
-            <CardActionArea onClick={() => handleCardClick("/book-cover")}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/dz")}>
               <CardMedia
                 component="img"
                 height="250"
@@ -76,10 +96,15 @@ function Projects() {
                 alt="DZ General Trading"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
                   DZ General Trading
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -89,8 +114,15 @@ function Projects() {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
-            <CardActionArea onClick={() => handleCardClick("/book-cover")}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/gursha")}>
               <CardMedia
                 component="img"
                 height="250"
@@ -98,10 +130,15 @@ function Projects() {
                 alt="Gursha"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
                   Gursha Digital
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -111,8 +148,15 @@ function Projects() {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
-            <CardActionArea onClick={() => handleCardClick("/book-cover")}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/tamagnjobs")}>
               <CardMedia
                 component="img"
                 height="250"
@@ -120,10 +164,15 @@ function Projects() {
                 alt="TAMAGM JOBS"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
                   TAMAGM JOBS
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -133,8 +182,15 @@ function Projects() {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
-            <CardActionArea onClick={() => handleCardClick("/book-cover")}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/bina")}>
               <CardMedia
                 component="img"
                 height="250"
@@ -142,10 +198,15 @@ function Projects() {
                 alt="BINA ADDIS"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
                   BINA ADDIS
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>
@@ -155,7 +216,14 @@ function Projects() {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ maxWidth: 345, bgcolor: "#CCC5B9", borderRadius: 4 }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
             <CardActionArea onClick={() => handleCardClick("/book-cover")}>
               <CardMedia
                 component="img"
@@ -164,10 +232,15 @@ function Projects() {
                 alt="Social Media Posts"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
                   Social Media Posts
                 </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                <Typography variant="body2" sx={{ color: "white" }}>
                   Lizards are a widespread group of squamate reptiles, with over
                   6,000 species, ranging across all continents except Antarctica
                 </Typography>

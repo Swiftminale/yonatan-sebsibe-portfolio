@@ -6,9 +6,9 @@ import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 
 // Import your images
-import image1 from "../../Assest/Image 1.avif";
-import image2 from "../../Assest/Image 2.avif";
-import image3 from "../../Assest/Image 3.avif";
+import image1 from "../../Assest/BookCover/Image 1.avif";
+import image2 from "../../Assest/BookCover/Image 2.avif";
+import image3 from "../../Assest/BookCover/Image 3.avif";
 // Add more images as needed
 
 const Label = styled(Paper)(({ theme }) => ({
@@ -40,6 +40,12 @@ function BookCover() {
         sx={{ fontWeight: 350, textAlign: "center", mt: 3, color: "#EB5E28" }}
       >
         BOOK COVER
+      </Typography>
+      <Typography
+        variant="h6"
+        sx={{ fontWeight: 350, textAlign: "center", mt: 3, color: "#fff" }}
+      >
+        COVER | 2022 | Lead Designer
       </Typography>
       <Box
         sx={{

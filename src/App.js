@@ -6,8 +6,15 @@ import Projects from "./components/Projects";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import About from "./components/About";
 import Services from "./components/Services";
-import BookCover from "./components/Projects/bookCover"; // Import BookCover component
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+//Load Component route
+import BookCover from "./components/Projects/bookCover"; // Import BookCover component
+import Bina from "./components/Projects/Bina"; // Import Bina component
+import Dz from "./components/Projects/Dz";
+import Gursha from "./components/Projects/Gursha";
+import Tamagnjobs from "./components/Projects/TamagnJobs";
+
 
 function App() {
   return (
@@ -27,7 +34,10 @@ function App() {
             }
           />
           <Route path="/book-cover" element={<BookCover />} />
-
+            <Route path="/bina" element={<Bina />} />
+            <Route path="/dz" element={<Dz />} />
+            <Route path="/gursha" element={<Gursha />} />
+            <Route path="/tamagnjobs" element={<Tamagnjobs />} />"
           {/* Define the BookCover route */}
         </Routes>
       </Container>
