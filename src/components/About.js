@@ -3,10 +3,12 @@ import React from "react";
 
 function About() {
   return (
-    <Paper sx={{ bgcolor: "transparent", color: "white", mt: 5 }}>
+    <Paper
+      sx={{ bgcolor: "#121214", color: "white", mt: 5, p: 2, borderRadius: 9 }}
+    >
       <Typography
-        variant="h5"
-        sx={{ fontWeight: 300, textAlign: "center", mt: 3 }}
+        variant="h4"
+        sx={{ fontWeight: 350, textAlign: "center", mt: 3, color: "#EB5E28" }}
       >
         About
       </Typography>
