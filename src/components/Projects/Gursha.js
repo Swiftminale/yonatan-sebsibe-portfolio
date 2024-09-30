@@ -78,7 +78,79 @@ function Gursha() {
           LOGO DESIGN | 2024 | Lead Designer
         </Typography>
       </Box>
-      <Box sx={{ mt: 8}}>
+      <Box sx={{ mt: 3 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Gursha Digitals Logo
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The Gursha Digitals logo is a creative and minimalistic design
+              that represents a digital agency with a modern, approachable, and
+              dynamic identity.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Typography & Iconography
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The logo features a unique, stylized "g" as the primary visual
+              element. The letter is split into two parts: the top circle, which
+              has a dot on its side, and the lower crescent. The dot may
+              symbolize a digital point or a moment of connection. The
+              simplified, abstract form of the "g" makes it modern and
+              memorable, while also embodying a forward-thinking digital
+              identity.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Color Palette
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The use of orange evokes energy, creativity, and innovation, which
+              aligns with the dynamic nature of digital work. The teal/blue
+              color contrasts with the orange, representing trust, reliability,
+              and calm, reinforcing the professionalism of the brand.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Typography
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The brand name Gursha is written in rounded, custom letters, which
+              complement the overall friendly and accessible vibe of the logo.
+              The word "DIGITALS" is subtly placed below in orange, further
+              reinforcing the company’s focus on digital services.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Symbolism
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The letter "g" in the logo might hint at "Gursha," a word
+              referring to a traditional Ethiopian gesture of feeding someone,
+              symbolizing care, sharing, and connection. This could subtly
+              represent how the company nurtures relationships and offers its
+              digital services with care.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant="h5" sx={{ color: "#EB5E28", mt: 3 }}>
+              Overall Concept
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
+              The logo effectively blends modern design principles with a
+              simple, approachable aesthetic, positioning Gursha Digitals as a
+              creative and trustworthy partner in the digital space.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+      <Box sx={{ mt: 8 }}>
         <Grid container spacing={2}>
           {/* Video Grid */}
           {itemData.map((item, index) => (
