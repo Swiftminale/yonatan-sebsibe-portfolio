@@ -13,16 +13,15 @@ import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = ["About", "Service", "Project"];
 
-function ResponsiveAppBar({ scrollToSection }) {
+function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = (section) => {
+  const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-    scrollToSection(section); // Scroll to the section
   };
 
   return (
@@ -33,6 +32,7 @@ function ResponsiveAppBar({ scrollToSection }) {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+
           <Typography
             variant="h6"
             noWrap
@@ -75,11 +75,11 @@ function ResponsiveAppBar({ scrollToSection }) {
                 horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
-              onClose={() => setAnchorElNav(null)}
+              onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography sx={{ textAlign: "center" }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -117,7 +117,7 @@ function ResponsiveAppBar({ scrollToSection }) {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={() => handleCloseNavMenu(page)}
+                onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
                 {page}
