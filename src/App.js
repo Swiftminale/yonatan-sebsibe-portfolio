@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import About from "./components/About";
 import Services from "./components/Services";
+import FooterBar from "./components/FooterBar"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Load Component route
@@ -40,6 +41,7 @@ function App() {
             <Route path="/tamagnjobs" element={<Tamagnjobs />} />"
           {/* Define the BookCover route */}
         </Routes>
+        <FooterBar/>
       </Container>
     </Router>
   );
