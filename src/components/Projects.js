@@ -14,6 +14,8 @@ import Gursha from "../Assest/Gursha.webp";
 import TAMAGMJOBS from "../Assest/TAMAGM JOBS.webp";
 import BINAADDIS from "../Assest/dOJtiusZ9xqTXdaBhaGp6ve444.webp";
 import SocilaPic from "../Assest/Social.webp";
+import Askuala from "../Assest/Askuala/logo.png"
+import Liyu from "../Assest/Liyu Koffi/logo.png"
 
 function Projects() {
   const navigate = useNavigate(); // Initialize navigate
@@ -208,6 +210,73 @@ function Projects() {
                 <Typography variant="body2" sx={{ color: "white" }}>
                   The logo for Bina Addis Educational Consultancy is a 
                   bold and dynamic representation of the company's focus on facilitating international education opportunities, with a strong emphasis on professionalism and movement.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/liyu")}>
+              <CardMedia
+                component="img"
+                height="250"
+                image={Liyu}
+                alt="Social Media Posts"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
+                  Liyu Koffi
+                </Typography>
+                <Typography variant="body2" sx={{ color: "white" }}>
+                 Askuala connects parents with vetted tutors via a web and mobile app, 
+                 offering personalized, accessible tutoring for primary and secondary students.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </Grid>
+
+                    <Grid item xs={12} sm={6} md={4}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              bgcolor: "transparent",
+              border: "1px solid #CCC5B9",
+              borderRadius: 4,
+            }}
+          >
+            <CardActionArea onClick={() => handleCardClick("/askuala")}>
+              <CardMedia
+                component="img"
+                height="250"
+                image={Askuala}
+                alt="Social Media Posts"
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  sx={{ color: "#EB5E28", fontWeight: 350 }}
+                >
+                  Askuala
+                </Typography>
+                <Typography variant="body2" sx={{ color: "white" }}>
+                 Askuala connects parents with vetted tutors via a web and mobile app, 
+                 offering personalized, accessible tutoring for primary and secondary students.
                 </Typography>
               </CardContent>
             </CardActionArea>

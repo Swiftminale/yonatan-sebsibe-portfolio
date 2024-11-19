@@ -16,7 +16,8 @@ import Dz from "./components/Projects/Dz";
 import Gursha from "./components/Projects/Gursha";
 import Tamagnjobs from "./components/Projects/TamagnJobs";
 import Social from "./components/Projects/Social"
-
+import Askuala from "./components/Projects/askuala"
+import Liyu from "./components/Projects/Liyu"
 function App() {
   return (
     <Router>
@@ -40,6 +41,8 @@ function App() {
             <Route path="/gursha" element={<Gursha />} />
             <Route path="/tamagnjobs" element={<Tamagnjobs />} />"
             <Route path="/social" element={<Social/>} />
+            <Route path="/askuala" element={<Askuala/>} />
+            <Route path="/liyu" element={<Liyu/>} />
           {/* Define the BookCover route */}
         </Routes>
         <FooterBar/>
