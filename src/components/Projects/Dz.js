@@ -1,5 +1,5 @@
-import { Box, Grid, Paper, Typography } from "@mui/material";
-import React from "react";
+import { Box, Grid, Paper, Typography, Modal } from "@mui/material";
+import React, { useState, useEffect } from "react";
 
 // Import images from the assets folder
 import image1 from "../../Assest/DZGeneral/image 1.jpg";
@@ -23,6 +23,48 @@ function Dz() {
     image7,
     image8,
   ];
+
+  // Add state for modal
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Add handlers for modal
+  const handleOpenImage = (src) => {
+    setSelectedImage(src);
+    setCurrentIndex(images.indexOf(src));
+  };
+
+  const handleCloseImage = () => {
+    setSelectedImage(null);
+    setCurrentIndex(0);
+  };
+
+  // Add navigation handlers
+  const handlePrevious = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
+    setSelectedImage(images[currentIndex > 0 ? currentIndex - 1 : images.length - 1]);
+  };
+
+  const handleNext = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
+    setSelectedImage(images[currentIndex < images.length - 1 ? currentIndex + 1 : 0]);
+  };
+
+  // Add keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      
+      if (e.key === 'ArrowLeft') handlePrevious(e);
+      if (e.key === 'ArrowRight') handleNext(e);
+      if (e.key === 'Escape') handleCloseImage();
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage, currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Paper sx={{ bgcolor: "transparent", p: 2 }}>
@@ -91,13 +133,11 @@ function Dz() {
       <Box sx={{ mt: 3 }}>
         <Grid container spacing={2}>
           {images.map((src, index) => (
-            <Grid
-              item
-              xs={12} // Full width on small screens
-              sm={6} // Two columns on medium and large screens (6 = half of 12)
-              key={index}
-            >
-              <Box>
+            <Grid item xs={12} sm={6} key={index}>
+              <Box
+                sx={{ cursor: 'pointer' }}
+                onClick={() => handleOpenImage(src)}
+              >
                 <img
                   src={src}
                   alt={`Bina Addis branding ${index + 1}`}
@@ -112,6 +152,111 @@ function Dz() {
           ))}
         </Grid>
       </Box>
+
+      <Modal
+        open={Boolean(selectedImage)}
+        onClose={handleCloseImage}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Box
+          sx={{
+            position: 'relative',
+            maxWidth: '95vw',
+            maxHeight: '95vh',
+            width: 'auto',
+            height: 'auto',
+            outline: 'none',
+          }}
+          onClick={handleCloseImage}
+        >
+          {/* Navigation overlays */}
+          <Box
+            onClick={handlePrevious}
+            sx={{
+              position: 'absolute',
+              left: 0,
+              top: 0,
+              bottom: 0,
+              width: '30%',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-start',
+              padding: '0 20px',
+              '&:hover': {
+                '& .nav-button': {
+                  opacity: 1,
+                },
+              },
+            }}
+          >
+            <Typography 
+              className="nav-button"
+              sx={{ 
+                color: 'white', 
+                fontSize: '2rem', 
+                opacity: 0.3,
+                transition: 'opacity 0.2s',
+                userSelect: 'none',
+              }}
+            >
+              ←
+            </Typography>
+          </Box>
+          <Box
+            onClick={handleNext}
+            sx={{
+              position: 'absolute',
+              right: 0,
+              top: 0,
+              bottom: 0,
+              width: '30%',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'flex-end',
+              padding: '0 20px',
+              '&:hover': {
+                '& .nav-button': {
+                  opacity: 1,
+                },
+              },
+            }}
+          >
+            <Typography 
+              className="nav-button"
+              sx={{ 
+                color: 'white', 
+                fontSize: '2rem', 
+                opacity: 0.3,
+                transition: 'opacity 0.2s',
+                userSelect: 'none',
+              }}
+            >
+              →
+            </Typography>
+          </Box>
+
+          {selectedImage && (
+            <img
+              src={selectedImage}
+              alt="Enlarged view"
+              style={{
+                maxWidth: '100%',
+                maxHeight: '95vh',
+                width: 'auto',
+                height: 'auto',
+                objectFit: 'contain',
+                display: 'block',
+              }}
+            />
+          )}
+        </Box>
+      </Modal>
     </Paper>
   );
 }

@@ -70,8 +70,7 @@ function Projects() {
                   {/* ጻዴ */}
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  Book cover Designed for "Dade" writen for "dean Ze'Aman Asefa"
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -105,8 +104,8 @@ function Projects() {
                   DZ General Trading
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  DZ General Trading's logo will feature arrows, 
+                  a container, and "DZ" to represent trade, shipping, and professionalism.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -139,8 +138,8 @@ function Projects() {
                   Gursha Digital
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                 The Gursha Digitals logo is a creative and minimalistic design that 
+                 represents a digital agency with a modern, approachable, and dynamic identity.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -173,8 +172,8 @@ function Projects() {
                   TAMAGM JOBS
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                 The Tamagn Jobs logo is a modern, visually engaging 
+                 representation of a job agency that focuses on connecting employers with potential candidates.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -207,8 +206,8 @@ function Projects() {
                   BINA ADDIS
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  The logo for Bina Addis Educational Consultancy is a 
+                  bold and dynamic representation of the company's focus on facilitating international education opportunities, with a strong emphasis on professionalism and movement.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -224,7 +223,7 @@ function Projects() {
               borderRadius: 4,
             }}
           >
-            <CardActionArea onClick={() => handleCardClick("/book-cover")}>
+            <CardActionArea onClick={() => handleCardClick("/social")}>
               <CardMedia
                 component="img"
                 height="250"
@@ -241,8 +240,8 @@ function Projects() {
                   Social Media Posts
                 </Typography>
                 <Typography variant="body2" sx={{ color: "white" }}>
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  We also offers social media management and post design 
+                  services to enhance your brand's online presence and engagement.
                 </Typography>
               </CardContent>
             </CardActionArea>

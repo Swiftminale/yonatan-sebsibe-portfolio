@@ -15,7 +15,7 @@ import Bina from "./components/Projects/Bina"; // Import Bina component
 import Dz from "./components/Projects/Dz";
 import Gursha from "./components/Projects/Gursha";
 import Tamagnjobs from "./components/Projects/TamagnJobs";
-
+import Social from "./components/Projects/Social"
 
 function App() {
   return (
@@ -39,6 +39,7 @@ function App() {
             <Route path="/dz" element={<Dz />} />
             <Route path="/gursha" element={<Gursha />} />
             <Route path="/tamagnjobs" element={<Tamagnjobs />} />"
+            <Route path="/social" element={<Social/>} />
           {/* Define the BookCover route */}
         </Routes>
         <FooterBar/>
