@@ -26,9 +26,9 @@ const Label = styled(Paper)(({ theme }) => ({
 
 // Update itemData to use your imported images
 const itemData = [
-  { img: image2, title: "Cover" },
-  { img: image1, title: "Image 1" },
-  { img: image3, title: "Image 3" },
+  { img: image2, },
+  { img: image1, },
+  { img: image3, },
   // Add more items as needed
 ];
 
