@@ -84,12 +84,8 @@ function Bina() {
               Typography
             </Typography>
             <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
-              The logo uses a combination of two main words: "BINA" and "ADDIS."
-              "BINA" is rendered in dark blue, signifying trust, reliability,
-              and professionalism. "ADDIS" is displayed in a bright orange,
-              symbolizing energy, enthusiasm, and a forward-thinking approach,
-              essential traits for an educational consultancy that aims to help
-              students advance in their careers.
+              The Logo is designed For Swift Computer Technology for their Askuala Tutoring App.
+              " TODO : Load Askuala Topography Here"
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
@@ -97,13 +93,7 @@ function Bina() {
               Visual Elements
             </Typography>
             <Typography variant="body1" sx={{ mt: 2, color: "white" }}>
-              The word "ADDIS" is intersected by a diagonal line, which
-              transitions into an airplane at the end of the "S". This line
-              symbolizes movement, growth, and global connectivity, alluding to
-              the consultancy’s role in facilitating international study
-              opportunities. The airplane at the end emphasizes the idea of
-              travel and overseas education, reinforcing the company’s focus on
-              helping students study abroad.
+              The word "Askuala" Todo:
             </Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
