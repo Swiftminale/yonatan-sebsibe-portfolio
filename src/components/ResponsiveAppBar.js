@@ -11,6 +11,14 @@ import MenuItem from "@mui/material/MenuItem";
 
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
+const typographyStyles = {
+  fontFamily: "monospace",
+  fontWeight: 900,
+  letterSpacing: ".3rem",
+  color: "inherit",
+  textDecoration: "none",
+};
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -39,11 +47,7 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 900,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              ...typographyStyles,
             }}
           >
             YS
@@ -57,11 +61,7 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              ...typographyStyles,
             }}
           >
             YS

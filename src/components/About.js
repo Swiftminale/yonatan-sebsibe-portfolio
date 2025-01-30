@@ -1,21 +1,34 @@
 import { Paper, Typography } from "@mui/material";
 import React from "react";
 
+const paperStyles = {
+  bgcolor: "#121214",
+  color: "white",
+  mt: 5,
+  p: 2,
+  borderRadius: 9,
+};
+
+const titleStyles = {
+  fontWeight: 350,
+  textAlign: "center",
+  mt: 3,
+  color: "#EB5E28",
+};
+
+const bodyStyles = {
+  fontWeight: 300,
+  textAlign: "center",
+  mt: 3,
+};
+
 function About() {
   return (
-    <Paper
-      sx={{ bgcolor: "#121214", color: "white", mt: 5, p: 2, borderRadius: 9 }}
-    >
-      <Typography
-        variant="h4"
-        sx={{ fontWeight: 350, textAlign: "center", mt: 3, color: "#EB5E28" }}
-      >
+    <Paper sx={paperStyles}>
+      <Typography variant="h4" sx={titleStyles}>
         About
       </Typography>
-      <Typography
-        variant="body1"
-        sx={{ fontWeight: 300, textAlign: "center", mt: 3 }}
-      >
+      <Typography variant="body1" sx={bodyStyles}>
         BSc in Urban Design from Addis Ababa University, and I bring extensive
         experience in both urban planning and graphic design to my work. I
         specialize in logo design, social media visuals, and digital content
